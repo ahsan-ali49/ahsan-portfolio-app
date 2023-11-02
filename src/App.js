@@ -1,8 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import {Footer} from "./components/Footer";
 import Header from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
-// import { Projects } from "./components/Projects";
+import { Projects } from "./components/Projects";
 // import { BuyerReview, SellerReview } from "./components/Reviews";
 // import Contact from "./components/Contact";
 
