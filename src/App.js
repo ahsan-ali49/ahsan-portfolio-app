@@ -1,19 +1,18 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
-import { Projects } from "./components/Projects";
+import { About } from './components/About';
+// import { Projects } from "./components/Projects";
 // import { BuyerReview, SellerReview } from "./components/Reviews";
 // import Contact from "./components/Contact";
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <HeroSection></HeroSection>
-      {/* <Projects></Projects> */}
-      {/* <BuyerReview></BuyerReview> */}
-      {/* <SellerReview></SellerReview> */}
-      {/* <Contact></Contact> */}
+    <div className="App container-fluid">
+        <Header></Header>
+        <HeroSection></HeroSection>
+        <About></About>
     </div>
   );
 }

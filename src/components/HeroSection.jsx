@@ -1,7 +1,6 @@
 export const HeroSection = () => {
   const mystyle = {
-    width: "100vw",
-    height: "90vh",
+    height: "89vh",
     backgroundColor: "goldenrod",
   };
   const nameHeaderStyles = {
