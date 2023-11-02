@@ -4,8 +4,11 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Header() {
+  const styles = {
+    backgroundColor: "black",
+  };
   return (
-    <Navbar expand="lg p-3" className="header-section navbar-dark">
+    <Navbar style={styles} expand="lg p-3" className="navbar-dark">
       <Container>
         <Navbar.Brand href="#home">AHSAN</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
