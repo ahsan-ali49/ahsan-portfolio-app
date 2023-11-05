@@ -3,6 +3,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import { Button } from "react-bootstrap";
 
 export const About = () => {
   const mystyle = {
@@ -54,6 +55,7 @@ export const About = () => {
               <span> Email : ahsan.shah330@gmail.com</span>
             </div>
           </div>
+          <Button className="btn-lg mt-5 bg-dark rounded-0">DOWNLOAD CV</Button>
         </div>
         <div className="col">Hello2</div>
       </div>
