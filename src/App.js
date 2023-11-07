@@ -13,6 +13,7 @@ function App() {
         <Header></Header>
         <HeroSection></HeroSection>
         <About></About>
+        {/* <Projects></Projects> */}
     </div>
   );
 }

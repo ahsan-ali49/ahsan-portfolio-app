@@ -1,12 +1,7 @@
 export const Projects = () => {
-  const mystyle = {
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "black",
-  };
   return (
-    <div style={mystyle}>
-      <h1>Projects</h1>
+    <div className="p-5 bg-secondary">
+      <h1 className="text-center">---- What I Do ----</h1>
     </div>
   );
 };

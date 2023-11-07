@@ -4,13 +4,9 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import { Button } from "react-bootstrap";
-// import ProgressBar from "react-bootstrap/ProgressBar";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 export const About = () => {
-  const mystyle = {
-    height: "80vh",
-  };
   const imageStyles = {
     width: "250px",
     height: "250px",
@@ -18,7 +14,7 @@ export const About = () => {
     padding: "0",
   };
   return (
-    <div style={mystyle} className="container-fluid">
+    <div className="container-fluid">
       <div className="row justify-content-center p-5">
         <img
           style={imageStyles}
@@ -27,7 +23,7 @@ export const About = () => {
           alt="my display"
         />
       </div>
-      <div style={mystyle} className="row">
+      <div className="row">
         <div className="col ps-5">
           <h2>Hi There! I'm Ahsan Shah</h2>
           <p className="w-75 text-secondary">
@@ -57,7 +53,9 @@ export const About = () => {
               <span> Email : ahsan.shah330@gmail.com</span>
             </div>
           </div>
-          <Button className="btn-lg mt-5 bg-dark rounded-0">DOWNLOAD CV</Button>
+          <Button className="btn-lg mt-5 rounded-0" variant="dark">
+            DOWNLOAD CV
+          </Button>
         </div>
         <div className="col">
           <div className="ps-5 mt-3">

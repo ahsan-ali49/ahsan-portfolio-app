@@ -10,7 +10,9 @@ function Header() {
   return (
     <Navbar style={styles} expand="lg p-3" className="navbar-dark">
       <Container>
-        <Navbar.Brand href="#home">AHSAN</Navbar.Brand>
+        <Navbar.Brand className="fw-bold" href="#home">
+          AHSAN
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
