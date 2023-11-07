@@ -4,6 +4,8 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import { Button } from "react-bootstrap";
+// import ProgressBar from "react-bootstrap/ProgressBar";
+import ProgressBar from "react-bootstrap/ProgressBar";
 
 export const About = () => {
   const mystyle = {
@@ -57,7 +59,24 @@ export const About = () => {
           </div>
           <Button className="btn-lg mt-5 bg-dark rounded-0">DOWNLOAD CV</Button>
         </div>
-        <div className="col">Hello2</div>
+        <div className="col">
+          <div className="ps-5 mt-3">
+            <p className="mb-0">HTML/CSS3</p>
+            <ProgressBar now={80} label={`${80}%`} variant="warning" />
+          </div>
+          <div className="ps-5 mt-3">
+            <p className="mb-0">JAVACRIPT</p>
+            <ProgressBar now={70} label={`${70}%`} variant="warning" />
+          </div>
+          <div className="ps-5 mt-3">
+            <p className="mb-0">REACTJS</p>
+            <ProgressBar now={40} label={`${40}%`} variant="warning" />
+          </div>
+          <div className="ps-5 mt-3">
+            <p className="mb-0">NODEJS</p>
+            <ProgressBar now={60} label={`${60}%`} variant="warning" />
+          </div>
+        </div>
       </div>
     </div>
   );
