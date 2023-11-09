@@ -2,7 +2,7 @@
 import Header from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { About } from './components/About';
-// import { Projects } from "./components/Projects";
+import { Projects } from "./components/Projects";
 // import { BuyerReview, SellerReview } from "./components/Reviews";
 // import Contact from "./components/Contact";
 import { Container } from 'react-bootstrap';
@@ -13,7 +13,7 @@ function App() {
         <Header></Header>
         <HeroSection></HeroSection>
         <About></About>
-        {/* <Projects></Projects> */}
+        <Projects></Projects>
     </div>
   );
 }

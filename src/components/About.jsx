@@ -14,7 +14,7 @@ export const About = () => {
     padding: "0",
   };
   return (
-    <div className="container-fluid">
+    <div className="container-fluid pb-5">
       <div className="row justify-content-center p-5">
         <img
           style={imageStyles}
@@ -39,7 +39,7 @@ export const About = () => {
             </div>
             <div className="col">
               <CalendarMonthIcon className="border border-1 border-dark rounded-circle p-1" />
-              <span> Age : 32</span>
+              <span> Age : 22</span>
             </div>
           </div>
 
