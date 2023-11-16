@@ -3,9 +3,7 @@ import Header from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { About } from './components/About';
 import { Projects } from "./components/Projects";
-// import { BuyerReview, SellerReview } from "./components/Reviews";
-// import Contact from "./components/Contact";
-import { Container } from 'react-bootstrap';
+import {Footer} from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +12,7 @@ function App() {
         <HeroSection></HeroSection>
         <About></About>
         <Projects></Projects>
+        <Footer></Footer>
     </div>
   );
 }
