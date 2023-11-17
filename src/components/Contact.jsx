@@ -1,61 +1,62 @@
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Form from "react-bootstrap/Form";
-import Row from "react-bootstrap/Row";
+import { Form } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
 function Contact() {
   return (
-    <Form>
-      <Row className="mb-3">
-        <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-      </Row>
-
-      <Form.Group className="mb-3" controlId="formGridAddress1">
-        <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="1234 Main St" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formGridAddress2">
-        <Form.Label>Address 2</Form.Label>
-        <Form.Control placeholder="Apartment, studio, or floor" />
-      </Form.Group>
-
-      <Row className="mb-3">
-        <Form.Group as={Col} controlId="formGridCity">
-          <Form.Label>City</Form.Label>
-          <Form.Control />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridState">
-          <Form.Label>State</Form.Label>
-          <Form.Select defaultValue="Choose...">
-            <option>Choose...</option>
-            <option>...</option>
-          </Form.Select>
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridZip">
-          <Form.Label>Zip</Form.Label>
-          <Form.Control />
-        </Form.Group>
-      </Row>
-
-      <Form.Group className="mb-3" id="formGridCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
-
-      <Button variant="primary" type="submit">
-        Submit
-      </Button>
-    </Form>
+    <div className="container-fluid p-5">
+      <div className="w-50 me-auto ms-auto d-flex align-items-center">
+        <div
+          className="mb-2"
+          style={{ flex: 1, height: "3px", backgroundColor: "black" }}
+        />
+        <div>
+          <h1 className="fw-bold text-center text-dark">
+            &nbsp; Get In Touch &nbsp;
+          </h1>
+        </div>
+        <div
+          className="mb-2"
+          style={{ flex: 1, height: "3px", backgroundColor: "black" }}
+        />
+      </div>
+      <div className="row pt-5 d-flex justify-content-center">
+        <Form className="pt-5 w-75">
+          <div className="row">
+            <Form.Group className="mb-3 w-50" controlId="formBasicName">
+              <Form.Control
+                type="text"
+                placeholder="Name"
+                className="custom-text-field rounded-0"
+              />
+            </Form.Group>
+            <Form.Group className="mb-3 w-50" controlId="formBasicEmail">
+              <Form.Control
+                type="email"
+                placeholder="Email"
+                className="custom-text-field rounded-0"
+              />
+            </Form.Group>
+          </div>
+          <div className="row">
+            <Form.Group className="mb-3 mt-5" controlId="formBasicName">
+              <Form.Control
+                type="text"
+                placeholder="How may I help you?"
+                className="custom-text-field rounded-0"
+              />
+            </Form.Group>
+          </div>
+          <div className="row">
+            <Button
+              className="btn-lg mt-5 me-auto ms-auto rounded-0 w-25"
+              variant="dark"
+            >
+              SEND MESSAGE
+            </Button>
+          </div>
+        </Form>
+      </div>
+    </div>
   );
 }
 

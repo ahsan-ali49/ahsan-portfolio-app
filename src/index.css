@@ -17,7 +17,11 @@ code {
     monospace;
 }
 
-ion-icon {
-  color: white;
-  font-size: 64px;
+/* Add this CSS to your stylesheet */
+.custom-text-field {
+  border: none;
+  outline: none;
+  border-bottom: 3px solid black;
 }
+
+

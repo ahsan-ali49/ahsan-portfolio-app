@@ -15,7 +15,9 @@ export const Projects = () => {
           style={{ flex: 1, height: "3px", backgroundColor: "black" }}
         />
         <div>
-          <h1 className="text-center text-dark">&nbsp; Recent Works &nbsp;</h1>
+          <h1 className="text-center text-dark font-weight-bold">
+            &nbsp; Recent Works &nbsp;
+          </h1>
         </div>
         <div
           className="mb-2"
