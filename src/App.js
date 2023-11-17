@@ -5,7 +5,7 @@ import { About } from './components/About';
 import { Projects } from "./components/Projects";
 import {Footer} from "./components/Footer";
 import Contact from "./components/Contact";
-// import Reviews from"./components/Reviews";
+import {Reviews} from"./components/Reviews";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <HeroSection/>
         <About/>
         <Projects/>
-        {/* <Reviews/> */}
+        <Reviews/>
         <Contact/>
         <Footer/>
         
