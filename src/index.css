@@ -24,4 +24,7 @@ code {
   border-bottom: 3px solid black;
 }
 
+.pagination-item {
+  outline: none;
+}
 

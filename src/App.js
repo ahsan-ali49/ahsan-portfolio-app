@@ -6,6 +6,7 @@ import { Projects } from "./components/Projects";
 import {Footer} from "./components/Footer";
 import Contact from "./components/Contact";
 import {Reviews} from"./components/Reviews";
+import { HireMe } from "./components/Hire";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <HeroSection/>
         <About/>
         <Projects/>
+        <HireMe/>
         <Reviews/>
         <Contact/>
         <Footer/>

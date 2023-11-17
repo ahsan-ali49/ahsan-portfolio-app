@@ -2,6 +2,9 @@ import Card from "react-bootstrap/Card";
 import project2 from "./project2.png";
 
 export const Reviews = () => {
+  const bodyStyles = {
+    backgroundColor: "#f4f4f4",
+  };
   const imageStyles = {
     width: "150px",
     height: "150px",
@@ -9,7 +12,7 @@ export const Reviews = () => {
     padding: "0",
   };
   return (
-    <div>
+    <div style={bodyStyles} className="pt-5 pb-5">
       <div className="w-50 me-auto ms-auto d-flex align-items-center">
         <div
           className="mb-2"
