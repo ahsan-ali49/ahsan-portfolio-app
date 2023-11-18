@@ -28,3 +28,12 @@ code {
   outline: none;
 }
 
+.custom-button:hover {
+  background-color: white; /* Set your desired transparent background color */
+  color:black; /* Set your desired text color on hover */
+}
+
+.custom-hire-button:hover {
+  background-color: white;
+  color: black; 
+}

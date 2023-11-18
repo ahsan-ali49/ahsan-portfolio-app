@@ -13,6 +13,36 @@ export const About = () => {
     objectFit: "cover",
     padding: "0",
   };
+  const courses = [
+    {
+      progressAt: 80,
+      name: "HTML/CSS3",
+    },
+    {
+      progressAt: 70,
+      name: "JAVASCRIPT",
+    },
+    {
+      progressAt: 40,
+      name: "REACTJS",
+    },
+    {
+      progressAt: 60,
+      name: "NODEJS",
+    },
+  ];
+
+  const progressBars = courses.map((course) => (
+    <div>
+      <p className="mb-0">{course.name}</p>
+      <ProgressBar
+        now={course.progressAt}
+        label={`${course.progressAt}%`}
+        variant="warning"
+      />
+    </div>
+  ));
+
   return (
     <div className="container-fluid pb-5">
       <div className="row justify-content-center p-5">
@@ -53,28 +83,14 @@ export const About = () => {
               <span> Email : ahsan.shah330@gmail.com</span>
             </div>
           </div>
-          <Button className="btn-lg mt-5 rounded-0" variant="dark">
+          <Button
+            className="btn-lg border border-2 border-black custom-button mt-5 rounded-0"
+            variant="dark"
+          >
             DOWNLOAD CV
           </Button>
         </div>
-        <div className="col">
-          <div className="ps-5 mt-3">
-            <p className="mb-0">HTML/CSS3</p>
-            <ProgressBar now={80} label={`${80}%`} variant="warning" />
-          </div>
-          <div className="ps-5 mt-3">
-            <p className="mb-0">JAVACRIPT</p>
-            <ProgressBar now={70} label={`${70}%`} variant="warning" />
-          </div>
-          <div className="ps-5 mt-3">
-            <p className="mb-0">REACTJS</p>
-            <ProgressBar now={40} label={`${40}%`} variant="warning" />
-          </div>
-          <div className="ps-5 mt-3">
-            <p className="mb-0">NODEJS</p>
-            <ProgressBar now={60} label={`${60}%`} variant="warning" />
-          </div>
-        </div>
+        <div className="col">{progressBars}</div>
       </div>
     </div>
   );

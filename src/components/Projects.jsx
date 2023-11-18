@@ -6,6 +6,18 @@ export const Projects = () => {
     height: "100%",
     objectFit: "cover",
   };
+  const projectdata = [
+    { src: project1, alt: "project1" },
+    { src: project1, alt: "project1" },
+    { src: project1, alt: "project1" },
+  ];
+
+  const projects = projectdata.map((project) => (
+    <div className="w-25 h-25 p-0">
+      <img style={imgPhoto} src={project.src} alt={project.alt} />
+    </div>
+  ));
+
   return (
     <div className="p-5">
       <div
@@ -25,17 +37,7 @@ export const Projects = () => {
           style={{ flex: 1, height: "3px", backgroundColor: "black" }}
         />
       </div>
-      <div className="row p-5 d-flex justify-content-between">
-        <div className="w-25 h-25 p-0">
-          <img style={imgPhoto} src={project1} alt="project1" />
-        </div>
-        <div className="w-25 h-25 p-0">
-          <img style={imgPhoto} src={project1} alt="project2" />
-        </div>
-        <div className="w-25 h-25 p-0">
-          <img style={imgPhoto} src={project1} alt="project3" />
-        </div>
-      </div>
+      <div className="row p-5 d-flex justify-content-between">{projects}</div>
     </div>
   );
 };

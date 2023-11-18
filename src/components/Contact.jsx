@@ -48,7 +48,7 @@ function Contact() {
           </div>
           <div className="row">
             <Button
-              className="btn-lg mt-5 me-auto ms-auto rounded-0 w-25"
+              className="btn-lg mt-5 me-auto ms-auto custom-hire-button rounded-0 w-25"
               variant="dark"
             >
               SEND MESSAGE
