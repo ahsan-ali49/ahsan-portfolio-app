@@ -1,20 +1,48 @@
-import project1 from "../assets/images/Project1.png";
+import Project1 from "../assets/images/Project1.jpg";
+import Project2 from "../assets/images/Project2.jpg";
+import { Card } from "react-bootstrap";
+
 export const Projects = () => {
-  const imgPhoto = {
-    width: "100%",
-    height: "100%",
+  const imageStyles = {
+    height: "150px",
     objectFit: "cover",
+    padding: "0",
   };
-  const projectdata = [
-    { src: project1, alt: "project1" },
-    { src: project1, alt: "project1" },
-    { src: project1, alt: "project1" },
+
+  const cardsData = [
+    {
+      imgSrc: Project1,
+      alt: "calculator project",
+      name: "Calculator",
+    },
+    {
+      imgSrc: Project2,
+      alt: "admin dashboard project",
+      name: "Admin Dashboard",
+    },
+    {
+      imgSrc: Project1,
+      alt: "Etch-e-sketch project",
+      name: "Etch-E-Sketch",
+    },
   ];
-  const projects = projectdata.map((project) => (
-    <div className="w-25 h-25 p-0">
-      <img style={imgPhoto} src={project.src} alt={project.alt} />
+
+  const cards = cardsData.map((card) => (
+    <div className="col col-lg-4 col-sm-12 mb-3">
+      <Card className="text-center p-0 rounded-0">
+        <img
+          style={imageStyles}
+          className="border border-5 border-secondary"
+          src={card.imgSrc}
+          alt={card.alt}
+        />
+        <Card.Body>
+          <Card.Title>{card.name}</Card.Title>
+        </Card.Body>
+      </Card>
     </div>
   ));
+
   return (
     <div className="p-5">
       <div
@@ -34,7 +62,7 @@ export const Projects = () => {
           style={{ flex: 1, height: "3px", backgroundColor: "black" }}
         />
       </div>
-      <div className="row p-5 d-flex justify-content-between">{projects}</div>
+      <div className="row p-5 d-flex justify-content-between">{cards}</div>
     </div>
   );
 };

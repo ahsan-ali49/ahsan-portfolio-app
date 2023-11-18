@@ -75,7 +75,6 @@ export const About = () => {
               <span> Age : 22</span>
             </div>
           </div>
-
           <div className="row mt-2">
             <div className="col-lg-6 col-sm-12">
               <LocalPhoneIcon className="border border-1 border-dark rounded-circle p-1" />
