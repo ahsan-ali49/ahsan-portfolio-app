@@ -1,5 +1,4 @@
 import project1 from "../assets/images/Project1.png";
-
 export const Projects = () => {
   const imgPhoto = {
     width: "100%",
@@ -11,13 +10,11 @@ export const Projects = () => {
     { src: project1, alt: "project1" },
     { src: project1, alt: "project1" },
   ];
-
   const projects = projectdata.map((project) => (
     <div className="w-25 h-25 p-0">
       <img style={imgPhoto} src={project.src} alt={project.alt} />
     </div>
   ));
-
   return (
     <div className="p-5">
       <div

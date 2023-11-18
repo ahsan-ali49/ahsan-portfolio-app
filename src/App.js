@@ -1,4 +1,3 @@
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { About } from './components/About';

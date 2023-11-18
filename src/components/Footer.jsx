@@ -28,7 +28,7 @@ export const Footer = () => {
           />
         </div>
         <p className="text-white">
-          Ahsan © 2023. All Right Reserved, By yourstruly.
+          Ahsan © 2023. All Right Reserved, By Yourstruly.
         </p>
       </div>
     </>
