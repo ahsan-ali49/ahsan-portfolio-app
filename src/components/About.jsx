@@ -45,16 +45,19 @@ export const About = () => {
 
   return (
     <div className="container-fluid pb-5">
-      <div className="row justify-content-center p-5">
-        <img
-          style={imageStyles}
-          className="rounded-circle border border-5 border-warning"
-          src={dpimage}
-          alt="my display"
-        />
+      <div className="row p-5">
+        <div className="col d-flex justify-content-center">
+          <img
+            style={imageStyles}
+            className="rounded-circle border border-5 border-warning"
+            src={dpimage}
+            alt="my display"
+          />
+        </div>
       </div>
-      <div className="row">
-        <div className="col ps-5">
+      <div className="row d-flex flex-row-reverse">
+        <div className="col pt-5">{progressBars}</div>
+        <div className="col-lg-6 col-sm-12 pt-5">
           <h2>Hi There! I'm Ahsan Shah</h2>
           <p className="w-75 text-secondary">
             I'm 22 years old creative web designer based in Pakistan,
@@ -63,34 +66,36 @@ export const About = () => {
             latest web standards.
           </p>
           <div className="row mt-5">
-            <div className="col">
+            <div className="col-lg-6 col-sm-12">
               <LocationOnIcon className="border border-1 border-dark rounded-circle p-1 float-clear" />
               <span> Location : SIBA, Sukkur, Pakistan.</span>
             </div>
-            <div className="col">
+            <div className="col-lg-6 col-sm-12">
               <CalendarMonthIcon className="border border-1 border-dark rounded-circle p-1" />
               <span> Age : 22</span>
             </div>
           </div>
 
           <div className="row mt-2">
-            <div className="col">
+            <div className="col-lg-6 col-sm-12">
               <LocalPhoneIcon className="border border-1 border-dark rounded-circle p-1" />
               <span> Phone : +92-3163319605</span>
             </div>
-            <div className="col">
+            <div className="col-lg-6 col-sm-12">
               <EmailIcon className="border border-1 border-dark rounded-circle p-1" />
               <span> Email : ahsan.shah330@gmail.com</span>
             </div>
           </div>
-          <Button
-            className="btn-lg border border-2 border-black custom-button mt-5 rounded-0"
-            variant="dark"
-          >
-            DOWNLOAD CV
-          </Button>
+          <div className="row d-flex justify-content-center">
+            <Button
+              className="btn-md text-nowrap border border-2 border-black custom-button mt-5 rounded-0"
+              variant="dark"
+              style={{ width: "100%", maxWidth: "150px" }}
+            >
+              DOWNLOAD CV
+            </Button>
+          </div>
         </div>
-        <div className="col">{progressBars}</div>
       </div>
     </div>
   );
