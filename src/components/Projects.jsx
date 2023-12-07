@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 
 export const Projects = () => {
   const imageStyles = {
-    height: "150px",
+    height: "200px",
     objectFit: "cover",
     padding: "0",
   };

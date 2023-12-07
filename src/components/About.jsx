@@ -59,7 +59,7 @@ export const About = () => {
         <div className="col pt-5">{progressBars}</div>
         <div className="col-lg-6 col-sm-12 pt-5">
           <h2>Hi There! I'm Ahsan Shah</h2>
-          <p className="w-75 text-secondary">
+          <p className="text-secondary">
             I'm 22 years old creative web designer based in Pakistan,
             specializing in User Interface Design and Development. I build
             clean, appealing, and functional interfaces which comply with the

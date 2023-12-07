@@ -27,29 +27,34 @@ export const Reviews = () => {
     },
   ];
   const cards = cardsData.map((card) => (
-    <Card className="text-center w-25 pt-5 rounded-0">
-      <img
-        style={imageStyles}
-        className="rounded-circle border border-5 border-secondary me-auto ms-auto"
-        src={card.imgSrc}
-        alt={card.alt}
-      />
-      <Card.Body>
-        <Card.Text className="text-secondary">{card.text}</Card.Text>
-        <Card.Title>{card.name}</Card.Title>
-        <Card.Text className="text-secondary">{card.position}</Card.Text>
-      </Card.Body>
-    </Card>
+    <div className="col col-lg-6 col-sm-12 ps-5 pe-5">
+      <Card className="text-center pt-3 mb-3 rounded-0">
+        <img
+          style={imageStyles}
+          className="rounded-circle border border-5 border-secondary me-auto ms-auto"
+          src={card.imgSrc}
+          alt={card.alt}
+        />
+        <Card.Body>
+          <Card.Text className="text-secondary">{card.text}</Card.Text>
+          <Card.Title>{card.name}</Card.Title>
+          <Card.Text className="text-secondary">{card.position}</Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
   ));
   return (
     <div style={bodyStyles} className="pt-5 pb-5">
-      <div className="w-50 me-auto ms-auto d-flex align-items-center">
+      <div
+        className="ps-5 pe-5"
+        style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
+      >
         <div
           className="mb-2"
           style={{ flex: 1, height: "3px", backgroundColor: "black" }}
         />
         <div>
-          <h1 className="fw-bold text-center text-dark">
+          <h1 className="text-center text-dark font-weight-bold">
             &nbsp; Reviews &nbsp;
           </h1>
         </div>
@@ -58,9 +63,7 @@ export const Reviews = () => {
           style={{ flex: 1, height: "3px", backgroundColor: "black" }}
         />
       </div>
-      <div className="row d-flex justify-content-center gap-5 pt-5">
-        {cards}
-      </div>
+      <div className="row pt-5 ps-5 pe-5">{cards}</div>
     </div>
   );
 };
