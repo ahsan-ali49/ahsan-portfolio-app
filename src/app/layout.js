@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
 import { Inter } from "next/font/google";
+import Footer from "./_components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const geistSans = localFont({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

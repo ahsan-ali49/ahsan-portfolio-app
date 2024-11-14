@@ -11,7 +11,7 @@
 
 body {
   background-color: #0e0e0e;
-  padding: 0px 100px;
+  /* padding: 0px 100px; */
 }
 
 /* Texts */
@@ -26,7 +26,8 @@ body {
   line-height: normal;
   letter-spacing: -0.72px;
 }
-.inter-white-18-400 {
+.inter-white-18-400,
+.footer li {
   color: #fff;
   font-family: "Inter";
   font-size: 18px;
@@ -34,6 +35,9 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.54px;
+}
+.footer li {
+  opacity: 0.5;
 }
 .inter-black-20-500 {
   color: #000;
@@ -242,6 +246,21 @@ body {
 
   border-radius: 13px;
   border: 0.75px solid #282828;
+  background: radial-gradient(
+    433.32% 135.87% at 96% 3.85%,
+    #111 16.23%,
+    #141414 100%
+  );
+}
+
+.footer {
+  display: flex;
+  padding: 50px 240px 20px 240px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  border-top: 1px solid #6d6d6d;
   background: radial-gradient(
     433.32% 135.87% at 96% 3.85%,
     #111 16.23%,

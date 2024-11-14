@@ -6,7 +6,7 @@ import ToolsSection from "./_components/ToolsSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="md:px-[100px] md:py-0">
       <HeroSection />
       <TabNavigation />
       <ServicesSection />
