@@ -72,6 +72,15 @@ body {
   line-height: normal;
   letter-spacing: -0.6px;
 }
+.suisse-white-26-500 {
+  color: #fff;
+  font-family: "Suisse Intl";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 33.8px */
+  letter-spacing: -1.3px;
+}
 .text-white-32-500 {
   color: #fff;
   font-family: "Suisse Intl";
@@ -161,6 +170,34 @@ body {
 }
 
 .services-box:hover {
+  background: radial-gradient(
+      100% 100% at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(433.32% 135.87% at 96% 3.85%, #242424 16.23%, #1c1c1c 100%);
+}
+
+.skills-box {
+  display: flex;
+  height: 126px;
+  padding: 35px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* flex: 1 0 0; */
+
+  border-radius: 19px;
+  border: 1px solid #444;
+  background: radial-gradient(
+    433.32% 135.87% at 96% 3.85%,
+    #242424 16.23%,
+    #1c1c1c 100%
+  );
+}
+
+.skills-box:hover {
   background: radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.1) 0%,

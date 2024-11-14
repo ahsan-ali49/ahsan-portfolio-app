@@ -34,7 +34,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="md:mb-[30px] md:px-[140px]">
+    <section className="md:mb-[50px] md:px-[140px]">
       <div className="flex flex-wrap md:gap-5 mx-auto">
         {services.map((service, index) => (
           <div key={index} className="md:w-[49%] services-box">
