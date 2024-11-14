@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Suisse Intl";
+  src: url("../../public/fonts/Suisse Intl Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #0e0e0e;
+  padding: 0px 100px;
+}
+
+/* Texts */
+.text-white-32-500 {
+  color: #fff;
+  font-family: "Suisse Intl";
+  font-size: 32.516px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 42.271px */
+  letter-spacing: -0.975px;
+}
+
+/* Buttons */
+.white-black-button {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 12px;
+  border: 1px solid #000;
+  background: linear-gradient(264deg, #fff -0.71%, #d0d0d0 95.01%);
+
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
