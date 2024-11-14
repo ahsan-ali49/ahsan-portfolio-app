@@ -9,13 +9,13 @@ const HeroSection = () => {
           <span role="img" aria-label="wave">
             👋
           </span>
-          , I'm Ahsan – <br className="hidden md:block" />
+          , I&apos;m Ahsan – <br className="hidden md:block" />
           Crafting Creative Code!
         </h1>
         <p className="inter-white-20-400 opacity-50 md:w-1/2 mt-2.5">
           As a creative developer, I blend code and design to build unique,
-          user-centric experiences. Let's turn your ideas into a dynamic and
-          engaging digital reality!
+          user-centric experiences. Let&apos;s turn your ideas into a dynamic
+          and engaging digital reality!
         </p>
       </div>
     </section>
