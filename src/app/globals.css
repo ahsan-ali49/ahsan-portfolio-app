@@ -72,6 +72,16 @@ body {
   line-height: normal;
   letter-spacing: -0.6px;
 }
+.inter-black-22-500 {
+  color: #000;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.88px;
+}
 .suisse-white-26-500 {
   color: #fff;
   font-family: "Suisse Intl";
@@ -204,4 +214,37 @@ body {
       rgba(255, 255, 255, 0) 100%
     ),
     radial-gradient(433.32% 135.87% at 96% 3.85%, #242424 16.23%, #1c1c1c 100%);
+}
+
+.form-container {
+  display: flex;
+  /* width: 764px; */
+  padding: 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+
+  border-radius: 19px;
+  border: 1px solid #444;
+  background: radial-gradient(
+    433.32% 135.87% at 96% 3.85%,
+    #242424 16.23%,
+    #1c1c1c 100%
+  );
+}
+
+.input-field {
+  display: flex;
+  padding: 15px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+
+  border-radius: 13px;
+  border: 0.75px solid #282828;
+  background: radial-gradient(
+    433.32% 135.87% at 96% 3.85%,
+    #111 16.23%,
+    #141414 100%
+  );
 }
