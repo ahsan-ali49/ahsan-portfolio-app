@@ -159,3 +159,12 @@ body {
     #1c1c1c 100%
   );
 }
+
+.services-box:hover {
+  background: radial-gradient(
+      100% 100% at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(433.32% 135.87% at 96% 3.85%, #242424 16.23%, #1c1c1c 100%);
+}
