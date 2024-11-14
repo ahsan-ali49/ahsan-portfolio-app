@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between md:px-[140px] md:pt-5">
       <h1 className="text-white-32-500">Portfolio</h1>
-      <button className="white-black-button">
+      <button className="white-black-button inter-black-18-500">
         <Image src={phone} />
         Get in touch
       </button>

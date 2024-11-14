@@ -1,3 +1,11 @@
+import HeroSection from "./_components/HeroSection";
+import TabNavigation from "./_components/TabNavigation";
+
 export default function Home() {
-  return <div>Hello World</div>;
+  return (
+    <main>
+      <HeroSection />
+      <TabNavigation />
+    </main>
+  );
 }
