@@ -6,8 +6,8 @@ const ContactSection = () => {
       <div>
         <h2 className="suisse-white-48-500">Get in touch</h2>
         <p className="inter-white-20-400  opacity-50 mt-2.5 w-1/2">
-          Have a question or want to start a project? Contact me, and let's make
-          your ideas come to life!
+          Have a question or want to start a project? Contact me, and let&apos;s
+          make your ideas come to life!
         </p>
       </div>
 
