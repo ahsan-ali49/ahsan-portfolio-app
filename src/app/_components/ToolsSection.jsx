@@ -27,16 +27,16 @@ const ToolsSection = () => {
       <h2 className="suisse-white-26-500">
         Tools & Technologies Powering My Creations
       </h2>
-      <div className="flex gap-5 flex-wrap mx-auto md:pt-[30px] md:pb-[50px]">
+      <div className="flex gap-5 flex-wrap justify-between mx-auto md:pt-[30px] md:pb-[50px]">
         {tools.map((tool, index) => (
-          <div key={index} className="skills-box w-[23%]">
-            <div className="flex flex-col justify-center items-center">
+          <div key={index} className="skills-box w-[23.5%]">
+            <div className="flex flex-col justify-center items-center gap-2.5">
               <Image
                 src={tool.imgSrc}
                 alt={tool.name}
                 className="w-12 h-12 object-contain"
               />
-              <p className="text-white text-lg">{tool.name}</p>
+              <p className="inter-white-18-400 opacity-50">{tool.name}</p>
             </div>
           </div>
         ))}
