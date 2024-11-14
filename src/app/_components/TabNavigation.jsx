@@ -7,7 +7,7 @@ const TabNavigation = () => {
   const tabs = ["About", "Projects", "Services"];
 
   return (
-    <div className="md:px-[140px]">
+    <div className="md:px-[140px] md:mb-[30px]">
       <div className="tab-navigation-bar w-fit">
         {tabs.map((tab) => (
           <button
