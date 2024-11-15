@@ -5,16 +5,15 @@ import facebook from "/public/icons/facebook.svg";
 import instagram from "/public/icons/instagram.svg";
 import github from "/public/icons/github.svg";
 import Image from "next/image";
-// FaXing, FaGithub, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer md:mt-[50px]">
       <div className="flex justify-between">
         {/* Left Section */}
         <div className="w-[45%]">
           <h3 className="text-white-32-500 mb-4">
-            Let's Connect and Collaborate
+            Let&apos;s Connect and Collaborate
           </h3>
           <p className="inter-white-20-400 opacity-50 mb-4">
             Reach out to discuss your project or ideas. I'm here to provide
@@ -67,16 +66,19 @@ const Footer = () => {
           <h4 className="inter-white-20-500 mb-4">Get in touch</h4>
           <ul className="space-y-2">
             <li>
-              <a href="mailto:ahsanshah@gmail.com" className="hover:text-white">
-                ahsanshah@gmail.com
+              <a
+                href="mailto:ahsan.shah@gmail.com"
+                className="hover:text-white"
+              >
+                ahsan.shah330@gmail.com
               </a>
             </li>
             <li>
               <a href="tel:+1234567890" className="hover:text-white">
-                +123-456-7890
+                +92-316-3319605
               </a>
             </li>
-            <li>123 Innovation Drive, Tech City, Country</li>
+            <li>Fortune Tower Sharah e Faisal, Karachi, Pakistan</li>
           </ul>
         </div>
       </div>

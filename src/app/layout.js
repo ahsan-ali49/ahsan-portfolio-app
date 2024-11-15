@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "./_components/Navbar";
 import { Inter } from "next/font/google";
 import Footer from "./_components/Footer";
+import HeroSection from "./_components/HeroSection";
+import TabNavigation from "./_components/TabNavigation";
 
 const inter = Inter({ subsets: ["latin"] });
 const geistSans = localFont({
@@ -28,6 +30,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
       >
         <Navbar />
+        <div className="md:px-[100px]">
+          <HeroSection />
+          <TabNavigation />
+        </div>
         {children}
         <Footer />
       </body>

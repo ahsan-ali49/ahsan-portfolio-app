@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section className="pt-[30px] md:px-[140px] md:mb-[50px]">
+    <section className="pt-[30px] md:px-[140px] md:mb-[70px]">
       <div>
         <h2 className="suisse-white-48-500">Get in touch</h2>
         <p className="inter-white-20-400  opacity-50 mt-2.5 w-1/2">
