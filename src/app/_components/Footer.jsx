@@ -10,9 +10,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="flex justify-between">
         {/* Left Section */}
-        <div>
+        <div className="w-[45%]">
           <h3 className="text-white-32-500 mb-4">
             Let's Connect and Collaborate
           </h3>
@@ -28,17 +28,20 @@ const Footer = () => {
             <a href="#" aria-label="Xing" className="hover:text-white">
               <Image src={x} alt="x" />
             </a>
+            <a href="#" aria-label="facebook" className="hover:text-white">
+              <Image src={facebook} alt="facebook" />
+            </a>
             <a href="#" aria-label="Instagram" className="hover:text-white">
               <Image src={instagram} alt="instagram" />
             </a>
             <a href="#" aria-label="GitHub" className="hover:text-white">
-              {/* <FaGithub size={24} /> */}
+              <Image src={github} alt="github" />
             </a>
           </div>
         </div>
 
         {/* Middle Section */}
-        <div>
+        <div className="md:w-[22%]">
           <h4 className="inter-white-20-500 mb-4">Quick Links</h4>
           <ul className="space-y-2">
             <li>
@@ -60,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section */}
-        <div>
+        <div className="md:w-[22%]">
           <h4 className="inter-white-20-500 mb-4">Get in touch</h4>
           <ul className="space-y-2">
             <li>
@@ -78,8 +81,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-10 border-t border-gray-700 pt-4 w-full">
-        <p className="inter-white-18-400 opacity-50">
+      <div className=" border-t border-[#202020] w-full">
+        <p className="inter-white-18-400 opacity-50 md:mt-10">
           © 2024, All rights reserved.
         </p>
       </div>
