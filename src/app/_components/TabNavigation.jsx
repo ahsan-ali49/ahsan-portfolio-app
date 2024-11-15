@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const TabNavigation = () => {
@@ -10,9 +11,10 @@ const TabNavigation = () => {
     <div className="md:px-[140px] md:mb-[30px]">
       <div className="tab-navigation-bar w-fit">
         {tabs.map((tab) => (
-          <button
+          <Link
             key={tab}
-            onClick={() => setActiveTab(tab)}
+            href={tab.toLocaleLowerCase()}
+            // onClick={() => setActiveTab(tab)}
             className={`transition ${
               activeTab === tab
                 ? "navigation-button-active inter-black-20-500"
@@ -20,7 +22,7 @@ const TabNavigation = () => {
             }`}
           >
             {tab}
-          </button>
+          </Link>
         ))}
       </div>
     </div>

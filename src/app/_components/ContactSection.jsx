@@ -12,7 +12,7 @@ const ContactSection = () => {
       </div>
 
       <div className="form-container md:w-[764px] md:mt-[35px] md:mb-[30px]">
-        <h3 className="suisse-white-26-500 mb-[35px]">Contact Form</h3>
+        <h3 className="suisse-white-26-500 md:mb-[35px]">Contact Form</h3>
         <form className="w-full">
           <div className="mb-[15px]">
             <label htmlFor="name" className="inter-white-20-500 mb-2.5">
