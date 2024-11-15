@@ -16,7 +16,7 @@ const Footer = () => {
             Let&apos;s Connect and Collaborate
           </h3>
           <p className="inter-white-20-400 opacity-50 mb-4">
-            Reach out to discuss your project or ideas. I'm here to provide
+            Reach out to discuss your project or ideas. I&apos;m here to provide
             support and turn your vision into reality.
           </p>
           <div className="flex space-x-4 text-gray-500">
