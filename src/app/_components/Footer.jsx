@@ -21,7 +21,12 @@ const Footer = () => {
             support and turn your vision into reality.
           </p>
           <div className="flex space-x-4 text-gray-500">
-            <a href="#" aria-label="LinkedIn" className="hover:text-white">
+            <a
+              href="https://www.linkedin.com/in/ahsan-ali49/"
+              target="_blank"
+              aria-label="LinkedIn"
+              className="hover:text-white"
+            >
               {/* <FaLinkedin size={24} /> */}
               {/* <Image src={linkedin} alt="linkedin" /> */}
               <svg
@@ -52,7 +57,12 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <a href="#" aria-label="Xing" className="hover:text-white">
+            <a
+              href="https://x.com/RealisticAhsan"
+              target="_blank"
+              aria-label="Xing"
+              className="hover:text-white"
+            >
               {/* <Image src={x} alt="x" /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +92,12 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <a href="#" aria-label="facebook" className="hover:text-white">
+            <a
+              href="#"
+              target="_blank"
+              aria-label="facebook"
+              className="hover:text-white"
+            >
               {/* <Image src={facebook} alt="facebook" /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +127,12 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <a href="#" aria-label="Instagram" className="hover:text-white">
+            <a
+              href="#"
+              target="_blank"
+              aria-label="Instagram"
+              className="hover:text-white"
+            >
               {/* <Image src={instagram} alt="instagram" /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +168,12 @@ const Footer = () => {
                 </defs>
               </svg>
             </a>
-            <a href="#" aria-label="GitHub" className="hover:text-white">
+            <a
+              href="https://github.com/ahsan-ali49"
+              target="_blank"
+              aria-label="GitHub"
+              className="hover:text-white"
+            >
               {/* <Image src={github} alt="github" /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
