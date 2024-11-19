@@ -211,17 +211,17 @@ const Footer = () => {
           <h4 className="inter-white-20-500 mb-4">Quick Links</h4>
           <ul className="space-y-2">
             <li>
-              <a href="#about" className="hover:text-white">
+              <a href="#about" className="hover:text-white links">
                 About
               </a>
             </li>
             <li>
-              <Link href="/projects" className="hover:text-white">
+              <Link href="/projects" className="hover:text-white links">
                 Projects
               </Link>
             </li>
             <li>
-              <a href="#services" className="hover:text-white">
+              <a href="#services" className="hover:text-white links">
                 Services
               </a>
             </li>
@@ -235,17 +235,21 @@ const Footer = () => {
             <li>
               <a
                 href="mailto:ahsan.shah@gmail.com"
-                className="hover:text-white"
+                className="hover:text-white links"
               >
                 ahsan.shah330@gmail.com
               </a>
             </li>
             <li>
-              <a href="tel:+1234567890" className="hover:text-white">
+              <a href="tel:+1234567890" className="hover:text-white links">
                 +92-316-3319605
               </a>
             </li>
-            <li>Fortune Tower Sharah e Faisal, Karachi, Pakistan</li>
+            <li>
+              <a href="https://maps.app.goo.gl/FCcwbm7C8xoz4fBY8">
+                Fortune Tower Sharah e Faisal, Karachi, Pakistan{" "}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

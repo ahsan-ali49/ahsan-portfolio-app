@@ -39,7 +39,7 @@ body {
 .footer li {
   opacity: 0.5;
 }
-.footer a:hover {
+.footer li:hover {
   color: white;
   opacity: 1;
 }
