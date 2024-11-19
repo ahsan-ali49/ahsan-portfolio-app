@@ -6,6 +6,8 @@ import Footer from "./_components/Footer";
 import HeroSection from "./_components/HeroSection";
 import TabNavigation from "./_components/TabNavigation";
 import ContactSection from "./_components/ContactSection";
+import Image from "next/image";
+import footerleft from "/public/gradients/footerleft.png";
 
 const inter = Inter({ subsets: ["latin"] });
 const geistSans = localFont({

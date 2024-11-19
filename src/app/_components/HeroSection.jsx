@@ -1,8 +1,12 @@
+import Image from "next/image";
 import React from "react";
+import hero from "/public/gradients/hero.png";
 
 const HeroSection = () => {
   return (
     <section className="md:pt-[60px] md:pb-5 md:px-[140px] md:mb-5">
+      <Image src={hero} alt="gradient" className="absolute top-0 right-0" />
+
       <div className="mx-auto">
         <h1 className="suisse-white-48-500 leading-tight">
           Hello{" "}

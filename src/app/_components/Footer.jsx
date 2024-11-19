@@ -6,10 +6,11 @@ import instagram from "/public/icons/instagram.svg";
 import github from "/public/icons/github.svg";
 import Image from "next/image";
 import Link from "next/link";
+import footerleft from "/public/gradients/footerleft.png";
 
 const Footer = () => {
   return (
-    <footer className="footer md:mt-[50px]">
+    <footer className="footer md:mt-[50px] relative z-10">
       <div className="flex justify-between">
         {/* Left Section */}
         <div className="w-[45%]">
@@ -247,7 +248,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="https://maps.app.goo.gl/FCcwbm7C8xoz4fBY8">
-                Fortune Tower Sharah e Faisal, Karachi, Pakistan{" "}
+                Fortune Tower, Sharah e Faisal, Karachi, Pakistan{" "}
               </a>
             </li>
           </ul>
@@ -259,6 +260,11 @@ const Footer = () => {
           © 2024, All rights reserved.
         </p>
       </div>
+      <Image
+        src={footerleft}
+        alt="gradient"
+        className="absolute bottom-0 left-0 -z-10"
+      />
     </footer>
   );
 };

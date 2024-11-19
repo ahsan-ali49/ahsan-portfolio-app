@@ -3,6 +3,9 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import getintouch from "/public/gradients/getintouch.png";
+import heroleft from "/public/gradients/heroleft.png";
+import Image from "next/image";
 
 const ContactSection = () => {
   const router = useRouter();
@@ -47,7 +50,13 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="pt-[30px] md:px-[140px] md:mb-[70px]">
+    <section className="pt-[30px] md:px-[140px] md:mb-[70px] relative">
+      {/* <Image
+        src={getintouch}
+        alt="gradient"
+        className="absolute bottom-0 h-full"
+      /> */}
+      {/* <Image src={heroleft} alt="gradient" className="absolute bottom-0" /> */}
       <div>
         <h2 className="suisse-white-48-500">Get in touch</h2>
         <p className="inter-white-20-400  opacity-50 mt-2.5 w-1/2">
