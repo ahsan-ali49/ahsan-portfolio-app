@@ -5,6 +5,7 @@ import facebook from "/public/icons/facebook.svg";
 import instagram from "/public/icons/instagram.svg";
 import github from "/public/icons/github.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -190,9 +191,9 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#projects" className="hover:text-white">
+              <Link href="/projects" className="hover:text-white">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#services" className="hover:text-white">

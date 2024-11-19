@@ -39,6 +39,10 @@ body {
 .footer li {
   opacity: 0.5;
 }
+.footer a:hover {
+  color: white;
+  opacity: 1;
+}
 .inter-black-20-500 {
   color: #000;
   text-align: center;

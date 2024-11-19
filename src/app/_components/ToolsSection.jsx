@@ -23,7 +23,7 @@ const tools = [
 
 const ToolsSection = () => {
   return (
-    <section className="md:px-[140px]">
+    <section className="md:px-[40px]">
       <h2 className="suisse-white-26-500">
         Tools & Technologies Powering My Creations
       </h2>
