@@ -8,10 +8,10 @@ const AboutMe = () => {
         <div className="w-3/5">
           <h2 className="suisse-white-26-500 mb-[30px]">A little about me</h2>
           <p className="inter-white-18-400 opacity-50">
-            I'm Ahsan Shah, a creative developer passionate about turning ideas
-            into engaging digital experiences. Starting in Karachi, my love for
-            tech and design grew from building simple sites to developing
-            complex applications.
+            I&apos;m Ahsan Shah, a creative developer passionate about turning
+            ideas into engaging digital experiences. Starting in Karachi, my
+            love for tech and design grew from building simple sites to
+            developing complex applications.
           </p>
           <p className="inter-white-18-400 opacity-50 mt-4">
             I blend technical skill with design to create seamless,
