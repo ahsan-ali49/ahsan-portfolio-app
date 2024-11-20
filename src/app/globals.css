@@ -178,17 +178,11 @@ body {
       rgba(255, 255, 255, 0) 100%
     ),
     radial-gradient(433.32% 135.87% at 96% 3.85%, #242424 16.23%, #1c1c1c 100%); */
-}
-.hello {
-  background: radial-gradient(
-      100% 100% at 50% 0%,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    ),
-    radial-gradient(433.32% 135.87% at 96% 3.85%, #242424 16.23%, #1c1c1c 100%);
-}
-.services-box:has(.services-box-inner:hover) {
   border-radius: 19px;
+  transition: all 1s ease; /* Smoothen the transition */
+}
+
+.services-box:has(.services-box-inner:hover) {
   border-top-width: 1px;
   border-top-style: solid;
   border-image: linear-gradient(
@@ -223,11 +217,21 @@ body {
     #242424 16.23%,
     #1c1c1c 100%
   );
+  transition: all 1s ease; /* Smooth transition for inner elements */
 }
 
 .skills-box {
+  border-top: 1px solid transparent;
+  border-radius: 19px;
+  transition: all 1s ease; /* Smoothen the transition */
+}
+.skills-box-inner {
+  /* border-top: 1px solid transparent; */
+  border-radius: 19px;
+  /* transition: all 1s ease; Smoothen the transition */
+
   display: flex;
-  height: 126px;
+  /* height: 126px; */
   padding: 35px;
   flex-direction: column;
   justify-content: center;
@@ -235,16 +239,27 @@ body {
   gap: 10px;
   /* flex: 1 0 0; */
 
-  border-radius: 19px;
+  /* /* border-radius: 19px; */
   border: 1px solid #444;
   background: radial-gradient(
     433.32% 135.87% at 96% 3.85%,
     #242424 16.23%,
     #1c1c1c 100%
   );
+  transition: all 1s ease;
 }
 
 .skills-box:hover {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-image: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 1) 50%,
+      transparent 100%
+    )
+    1;
+
   background: radial-gradient(
       100% 100% at 50% 0%,
       rgba(255, 255, 255, 0.1) 0%,

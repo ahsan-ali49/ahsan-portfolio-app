@@ -29,8 +29,10 @@ const ToolsSection = () => {
       </h2>
       <div className="flex gap-5 flex-wrap justify-between mx-auto md:pt-[30px] md:pb-[50px]">
         {tools.map((tool, index) => (
+          //         <div key={index} className="md:w-[49%] services-box">
+          // <div className="h-full services-box-inner w-full"></div>
           <div key={index} className="skills-box w-[23.5%]">
-            <div className="flex flex-col justify-center items-center gap-2.5">
+            <div className="flex flex-col justify-center items-center gap-2.5 h-full skills-box-inner w-full">
               <Image
                 src={tool.imgSrc}
                 alt={tool.name}
