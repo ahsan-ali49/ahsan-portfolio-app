@@ -1,9 +1,5 @@
 import React from "react";
-import linkedin from "/public/icons/linkedin.svg";
-import x from "/public/icons/x.svg";
-import facebook from "/public/icons/facebook.svg";
-import instagram from "/public/icons/instagram.svg";
-import github from "/public/icons/github.svg";
+
 import Image from "next/image";
 import Link from "next/link";
 import footerleft from "/public/gradients/footerleft.png";
@@ -260,11 +256,11 @@ const Footer = () => {
           © 2024, All rights reserved.
         </p>
       </div>
-      <Image
+      {/* <Image
         src={footerleft}
         alt="gradient"
         className="absolute bottom-0 left-0 -z-10"
-      />
+      /> */}
     </footer>
   );
 };

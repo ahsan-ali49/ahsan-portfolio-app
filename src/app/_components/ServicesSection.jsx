@@ -34,20 +34,22 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="md:mb-[50px] md:px-[40px]">
+    <section className="md:mb-[50px] md:px-[40px] z-100">
       <div className="flex flex-wrap md:gap-4 justify-between mx-auto">
         {services.map((service, index) => (
           <div key={index} className="md:w-[49%] services-box">
-            <Image
-              src={service.icon}
-              alt={service.title}
-              className="md:w-11 md:h-11"
-            />
-            <div className="">
-              <h3 className="inter-white-20-600 md:mb-4">{service.title}</h3>
-              <p className="inter-white-18-400 opacity-50">
-                {service.description}
-              </p>
+            <div className="h-full services-box-inner w-full">
+              <Image
+                src={service.icon}
+                alt={service.title}
+                className="md:w-11 md:h-11"
+              />
+              <div className="">
+                <h3 className="inter-white-20-600 md:mb-4">{service.title}</h3>
+                <p className="inter-white-18-400 opacity-50">
+                  {service.description}
+                </p>
+              </div>
             </div>
           </div>
         ))}
